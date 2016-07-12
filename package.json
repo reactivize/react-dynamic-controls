@@ -1,0 +1,60 @@
+{
+  "name": "dynamic-react-controls",
+  "version": "0.0.2",
+  "description": "Dynamic React Controls",
+  "main": "''",
+  "scripts": {
+    "build": "webpack -p --config webpack.production.config.js --progress --profile --colors",
+    "dev": "webpack-dev-server --progress --profile --colors --hot",
+    "start": "node ./bin/server",
+    "debug": "DEBUG=app node ./bin/server",
+    "nodemon": "DEBUG=app nodemon ./bin/server",
+    "test": "mocha --reporter spec --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "bootstrap": "3.3.5",
+    "debug": "2.2.0",
+    "express": "4.14.0",
+    "hippie": "0.5.0",
+
+
+    "morgan": "1.7.0",
+    "node-libs-browser": "1.0.0",
+    "ramda": "^0.21.0",
+    "react": "15.2.1",
+    "react-dom": "15.2.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "request": "2.73.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.10.4",
+    "babel-loader": "6.2.4",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-react": "6.11.1",
+    "css-loader": "0.23.1",
+    "copy-webpack-plugin": "^3.0.1",
+    "file-loader": "0.9.0",
+    "mocha": "2.5.3",
+    "nodemon": "1.9.2",
+    "react-hot-loader": "1.3.0",
+    "style-loader": "0.13.1",
+    "url-loader": "0.5.7",
+    "webpack": "1.13.1",
+    "webpack-dev-server": "1.14.1"
+  }
+}
