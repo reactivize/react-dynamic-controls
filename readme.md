@@ -5,6 +5,8 @@ if you wish to run client code in docker container...
 docker run -it -v //c/Users/Public/mydocker/dynamicControlsClient:/dynamicControlsClient -p 3000:3000 mydev /bin/bash
 ```
 
+install packages...
+``` npm i ```
 
 
 production build...
@@ -33,6 +35,7 @@ http://localhost:8080
 
 
 install packages...
+- if running the server as a separate project from the client
 ``` npm i ```
 
 
