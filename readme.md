@@ -26,3 +26,18 @@ production build...
 ```
 > $ npm run build
 ```
+
+
+
+
+
+### screenshots
+
+![dynamic controls 01](https://s32.postimg.org/6jbbdq4oh/questionswide.jpg)
+
+![dynamic controls 01](https://s32.postimg.org/fptm109wx/questionsmobile.jpg)
+
+![dynamic controls 01](https://s32.postimg.org/i5vfeurzl/questionaire_Console_After_Submit.jpg)
+
+
+
