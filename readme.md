@@ -1,31 +1,65 @@
 
 
-run server in docker container
-docker run -it -v //c/Users/Public/mydocker/react-webpack-babel:/dynamiccontrols -p 3000:3000 -p 5858:5858 mydev /bin/bash
+run server in docker container...
+```
+docker run -it -v //c/Users/Public/mydocker/dynamicControlsClient:/dynamiccontrols -p 3000:3000 mydev /bin/bash
+```
 
 
 
+production build...
+run this first to create the bundle.js
+```
+> $ npm run build
+```
 
 
-To run webpack-dev-server... 
+to run webpack-dev-server... 
 
 ```
 > $ npm run dev
 ```
 
-Open the web browser to...
+open the web browser to...
 http://localhost:8080
 
 
 
 
+# Server Setup
+
+
+## setup
+
+
+install packages...
+``` npm i ```
+
+
+make sure tests pass...
+``` npm t ```
 
 
 
-production build...
-```
-> $ npm run build
-```
+## server:
+if you want to run the app in docker...
+- also opens up the debugger port; 5858
+docker run -it -v //c/Users/Public/mydocker/dynamicControlsServer:/expressapi -p 3000:3000 -p 5858:5858 mydev /bin/bash
+
+
+
+run app, and listen for changes....
+``` npm run nodemon ```
+
+
+browse to...
+http://localhost:3000
+or if in docker...
+http://192.168.99.100:3000
+
+
+
+
 
 
 
