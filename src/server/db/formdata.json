@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "title": "Tell us about yourself!",
+      "fields": [
+        { "name": "first_name", "label": "First Name", "type": "text" },
+        { "name": "last_name", "label": "Last Name", "type": "text" },
+        { "name": "email", "label": "Email", "type": "email" },
+        { "name": "phone_number", "label": "Phone Number", "type": "text" }
+      ]
+    },
+    {
+      "title": "Where do you live?",
+      "fields": [
+        { "name": "street_address", "label": "Street Address", "type": "text" },
+        { "name": "post_code", "label": "Post Code", "type": "text" },
+        { "name": "country", "label": "Country", "type": "dropdown", "options": ["Canada", "USA", "Australia"] },
+        { "name": "isRenting", "label": "Are Your Renting?", "type": "checkbox" },
+        { "name": "hobbies", "label": "Hobbies", "type": "dropdownMultiple", "options": ["Camping", "Sports", "Reading"] }
+      ]
+    },
+    {
+      "title": "Extra Details",
+      "fields": [
+        { "name": "goals", "label": "Personal Goals", "type": "textarea" },
+      
+        {
+          "name": "income", "label": "Income Range", "type": "radio",
+          "radios": [{
+            "id": "id1",
+            "value": "id1",
+            "text": "0 to 30K"
+          },
+          {
+            "id": "id2",
+            "value": "id2",
+            "text": "30K to 50K"
+          },
+          {
+            "id": "id3",
+            "value": "id3",
+            "text": "50K to 100K"
+          },
+          {
+            "id": "id4",
+            "value": "id4",
+            "text": "100K+"
+          }
+          ]
+        }
+      ]
+    }
+  ]
+}
