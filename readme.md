@@ -44,8 +44,9 @@ make sure tests pass...
 ## server:
 if you wish to run server code in docker...
 - also opens up the debugger port; 5858
+```
 docker run -it -v //c/Users/Public/mydocker/dynamicControlsServer:/expressapi -p 3000:3000 -p 5858:5858 mydev /bin/bash
-
+```
 
 
 run app, and listen for changes....
@@ -54,8 +55,12 @@ run app, and listen for changes....
 
 browse to...
 http://localhost:3000
+
 or if in docker...
-http://192.168.99.100:3000
+
+192.168.99.100:3000
+
+(get docker container ip using.... 'docker-machine ip')
 
 
 
@@ -64,8 +69,7 @@ http://192.168.99.100:3000
 
 
 
-
-### screenshots
+## Screenshots:
 
 ![dynamic controls 01](https://s32.postimg.org/dzakzisdx/questionswide.jpg)
 
