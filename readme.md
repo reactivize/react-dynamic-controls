@@ -67,6 +67,15 @@ or if in docker...
 
 
 
+## Notes:
+To allow the client to make an ajax call to the server on a separate port,
+- you may have need to Allow-Control-Allow-Origin: * 
+
+I use this Chrome extension for development...
+
+https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en
+
+
 
 
 
