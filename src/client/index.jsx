@@ -54,8 +54,7 @@ export class App extends React.Component {
 
       <form
         className="questionForm form-horizontal"
-
-        onSubmit={e => this.handleSubmit(e) }
+        onSubmit={e => this.handleSubmit(e)}
         >
 
         {this.state.formdata}

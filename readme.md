@@ -83,11 +83,11 @@ https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeac
 
 ## Screenshots:
 
-![dynamic controls 01](https://s32.postimg.org/dzakzisdx/questionswide.jpg)
+![dynamic controls - web view](https://s32.postimg.org/dzakzisdx/questionswide.jpg)
 
-![dynamic controls 01](https://s32.postimg.org/oxluhpgz9/questionsmobile.jpg)
+![dynamic controls - mobile view](https://s32.postimg.org/oxluhpgz9/questionsmobile.jpg)
 
-![dynamic controls 01](https://s32.postimg.org/ive7r7sj9/questionaire_Console_After_Submit.jpg)
+![dynamic controls - devtools view](https://s32.postimg.org/ive7r7sj9/questionaire_Console_After_Submit.jpg)
 
 
 
