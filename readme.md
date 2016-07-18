@@ -2,7 +2,7 @@
 
 if you wish to run client code in docker container...
 ```
-docker run -it -v //c/Users/Public/mydocker/dynamicControlsClient:/dynamicControlsClient -p 8080:8080 mydev /bin/bash
+docker run -it -v "$PWD":/dynamicControlsClient -p 8080:8080 mydev /bin/bash
 ```
 
 install packages...
@@ -48,7 +48,7 @@ make sure tests pass...
 if you wish to run server code in docker...
 - also opens up the debugger port; 5858
 ```
-docker run -it -v //c/Users/Public/mydocker/dynamicControlsServer:/dynamicControlsServer -p 3000:3000 -p 5858:5858 mydev /bin/bash
+docker run -it -v "$PWD":/dynamicControlsServer -p 3000:3000 -p 5858:5858 mydev /bin/bash
 ```
 
 
