@@ -76,6 +76,24 @@ I use this Chrome extension for development...
 https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en
 
 
+## Source Files Explanation:
+
+1. the json on the server, exposed as a route
+
+/src/server/db/formdata.json
+
+
+2. the react component on the client that retrieves the json from the server
+
+/src/client/index.jsx
+
+
+3. the lib module on the client that converts the form control information in the json file into jsx, and returns it back to the react component to render.
+
+/src/client/lib/dynamicControls
+
+
+
 
 
 
