@@ -17,7 +17,8 @@ export class App extends React.Component {
     console.log('DynamicForm.js: start: componentDidMount');
     this.setState({ formdata: 'Waiting...' });
 
-    window.fetch('http://localhost:3000/questions') // http://192.168.99.100:3000/questions docker ip
+    // window.fetch('http://localhost:3000/questions')
+    window.fetch('http://192.168.99.100:3000/questions') // docker ip
       .then(function (response) {
         // console.log('DynamicForm.js: fetch.then, response: ', response);
         return response.json();
@@ -54,7 +55,7 @@ export class App extends React.Component {
 
       <form
         className="questionForm form-horizontal"
-        onSubmit={e => this.handleSubmit(e)}
+        onSubmit={e => this.handleSubmit(e) }
         >
 
         {this.state.formdata}
@@ -78,5 +79,3 @@ export class App extends React.Component {
 }
 
 ReactDOM.render(<App/>, document.querySelector("#myApp"));
-
-
