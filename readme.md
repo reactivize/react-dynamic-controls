@@ -9,7 +9,7 @@ download project to your devbox
 
 change into the root folder of the project
 
-``` cd react-dynamic-controls.git ```
+``` cd react-dynamic-controls ```
 
 
 
@@ -33,20 +33,24 @@ install packages...
 
 
 production build...
-run this first to create the bundle.js
+- run this first to create the bundle.js
+- give it one minute
+- will create a /public/ folder with a bundle.js and copied in index.html
 ```
-> $ npm run build
+npm run build
 ```
 
 
-to run webpack-dev-server... 
+open up an other docker terminal
+- run webpack-dev-server from this new terminal
+- give it 30 seconds
 
-```
-> $ npm run dev
-```
+``` npm run dev ```
 
 open the web browser to...
-http://localhost:8080
+http://localhost:8888
+or...
+192.168.99.100:8888
 
 
 
@@ -71,22 +75,24 @@ make sure tests pass...
 if you wish to run server code in docker...
 - also opens up the debugger port; 5858
 ```
-docker run -it -v "$PWD":/dynamicControlsServer -p 3000:3000 -p 5858:5858 mydev /bin/bash
+docker run -it -v "$PWD":/dynamicControlsServer -p 3000:3000 -p 5858:5858 node:6.2.1 /bin/bash
 ```
 
 
 run app, and listen for changes....
-``` npm run nodemon ```
+``` npm run debug2 ```
 
 
 browse to...
-http://localhost:3000
-
+http://localhost:3000/questions
 or if in docker...
+192.168.99.100:3000/questions
+- docker note:
+- (get docker container ip using.... 'docker-machine ip')
 
-192.168.99.100:3000
 
-(get docker container ip using.... 'docker-machine ip')
+
+
 
 
 

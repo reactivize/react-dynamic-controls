@@ -8,6 +8,7 @@
     "dev": "webpack-dev-server --progress --profile --colors --hot",
     "start": "node ./bin/server",
     "debug": "DEBUG=app node ./bin/server",
+    "debug2": "DEBUG=app node ./src/server/server",
     "nodemon": "DEBUG=app nodemon ./bin/server",
     "test": "mocha --reporter spec --recursive"
   },
