@@ -14,9 +14,19 @@ change into the root folder of the project
 
 
 if you wish to run client code in docker container...
+- open docker terminal
+- cd into root folder of project
+- then run...
 ```
-docker run -it -v "$PWD":/dynamicControlsClient -p 8080:8080 mydev /bin/bash
+docker run -it -v "$PWD":/dynamicControlsClient -p 8080:8080 node:6.2.1 /bin/bash
 ```
+
+
+now that you're in the shell of the container, cd into the root of the project
+
+``` cd dynamicControlsClient ```
+
+
 
 install packages...
 ``` npm i ```
