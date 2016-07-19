@@ -18,7 +18,7 @@ if you wish to run client code in docker container...
 - cd into root folder of project
 - then run...
 ```
-docker run -it -v "$PWD":/dynamicControlsClient -p 8080:8080 node:6.2.1 /bin/bash
+docker run -it -v "$PWD":/react-dynamic-controls -p 8080:8080 node:6.2.1 /bin/bash
 ```
 
 
