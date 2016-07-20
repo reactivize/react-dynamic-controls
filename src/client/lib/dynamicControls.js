@@ -119,7 +119,8 @@ const cbQuestions = (e) => {
 
 
 const q = R.compose(
-  R.map(cbQuestions)
+  R.map(cbQuestions),
+  R.identity // placeholder (passthrough) for now; more pipeline processing expected here
 );
 
 
