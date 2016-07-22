@@ -17,6 +17,7 @@ if you wish to run client code in docker container...
 - open docker terminal
 - cd into root folder of project
 - then run...
+
 ` docker run -it -v "$PWD":/react-dynamic-controls -p 8888:8888 node:6.2.1 /bin/bash `
 
 
@@ -47,9 +48,10 @@ open up an other docker terminal
 ` npm run dev `
 
   open the web browser to...
-  http://localhost:8888
+  - http://localhost:8888
+  
   or...
-  192.168.99.100:8888
+  - 192.168.99.100:8888
 
 
 
@@ -62,37 +64,37 @@ open up an other docker terminal
 
 install packages...
 - if running the server as a separate project from the client
-``` npm i ```
+
+` npm i `
 
 
 make sure tests pass...
-``` npm t ```
+
+` npm t `
 
 
 
 ## server:
 if you wish to run server code in docker...
 - also opens up the debugger port; 5858
-```
-docker run -it -v "$PWD":/dynamicControlsServer -p 3000:3000 -p 5858:5858 node:6.2.1 /bin/bash
-```
+
+` docker run -it -v "$PWD":/dynamicControlsServer -p 3000:3000 -p 5858:5858 node:6.2.1 /bin/bash `
 
 
 run app, and listen for changes....
 
-``` npm run debug:server ```
+` npm run debug:server `
 
 
 
 browse to...
-
-http://localhost:3000/questions
+- http://localhost:3000/questions
 
 or if in docker...
+- 192.168.99.100:3000/questions
 
-192.168.99.100:3000/questions
-- docker note:
-- (get docker container ip using.... 'docker-machine ip')
+docker note:
+- (get docker container ip using.... `docker-machine ip`)
 
 
 
@@ -110,19 +112,19 @@ https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeac
 
 ## Source Files Explanation:
 
-1. the json on the server, exposed as a route
+the json on the server, exposed as a route
 
-`/src/server/db/formdata.json`
-
-
-2. the react component on the client that retrieves the json from the server
-
-`/src/client/index.jsx`
+> /src/server/db/formdata.json
 
 
-3. the lib module on the client that converts the form control information in the json file into jsx, and returns it back to the react component to render.
+the react component on the client that retrieves the json from the server
 
-`/src/client/lib/dynamicControls`
+> /src/client/index.jsx
+
+
+the lib module on the client that converts the form control information in the json file into jsx, and returns it back to the react component to render.
+
+> /src/client/lib/dynamicControls
 
 
 
