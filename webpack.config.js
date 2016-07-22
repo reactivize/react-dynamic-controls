@@ -21,7 +21,7 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   module: {
-    loaders: loaders
+    loaders
   },
   devServer: {
     contentBase: "./public",
@@ -33,6 +33,7 @@ module.exports = {
 		},
   plugins: [
     new webpack.NoErrorsPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
     new CopyWebpackPlugin([
       { from: './index.html' }
     ]),
