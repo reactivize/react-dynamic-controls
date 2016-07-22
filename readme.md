@@ -3,7 +3,7 @@
 
 download project to your devbox
 
-``` git clone git@github.com:reactivize/react-dynamic-controls.git ```
+` git clone git@github.com:reactivize/react-dynamic-controls.git `
 
 
 
@@ -81,7 +81,7 @@ docker run -it -v "$PWD":/dynamicControlsServer -p 3000:3000 -p 5858:5858 node:6
 
 run app, and listen for changes....
 
-``` npm run debug2 ```
+``` npm run debug:server ```
 
 
 
@@ -113,17 +113,17 @@ https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeac
 
 1. the json on the server, exposed as a route
 
-/src/server/db/formdata.json
+`/src/server/db/formdata.json`
 
 
 2. the react component on the client that retrieves the json from the server
 
-/src/client/index.jsx
+`/src/client/index.jsx`
 
 
 3. the lib module on the client that converts the form control information in the json file into jsx, and returns it back to the react component to render.
 
-/src/client/lib/dynamicControls
+`/src/client/lib/dynamicControls`
 
 
 
