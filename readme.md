@@ -80,16 +80,20 @@ docker run -it -v "$PWD":/dynamicControlsServer -p 3000:3000 -p 5858:5858 node:6
 
 
 run app, and listen for changes....
+
 ``` npm run debug2 ```
 
 
+
 browse to...
+
 http://localhost:3000/questions
+
 or if in docker...
+
 192.168.99.100:3000/questions
 - docker note:
 - (get docker container ip using.... 'docker-machine ip')
-
 
 
 
