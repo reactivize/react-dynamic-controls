@@ -2,13 +2,13 @@
   "name": "dynamic-react-controls",
   "version": "0.0.2",
   "description": "Dynamic React Controls",
-  "main": "''",
+  "main": "",
   "scripts": {
-    "build": "NODE_ENV=production webpack -p --config webpack.production.config.js --progress --profile --colors",
+    "build": "webpack -p --config webpack.production.config.js --progress --profile --colors",
     "dev": "webpack-dev-server --progress --profile --colors --hot",
     "start": "node ./bin/server",
     "debug": "DEBUG=app node ./bin/server",
-    "debug2": "DEBUG=app node ./src/server/server",
+    "debug:server": "DEBUG=app node ./src/server/server",
     "nodemon": "DEBUG=app nodemon ./bin/server",
     "test": "mocha --reporter spec --recursive"
   },
