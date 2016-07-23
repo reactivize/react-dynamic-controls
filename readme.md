@@ -50,8 +50,11 @@ open up an other docker terminal
   open the web browser to...
   - http://localhost:8888
   
-  or...
+  or if in docker...
   - 192.168.99.100:8888
+
+docker note:
+- (get your docker container ip using.... `docker-machine ip`)
 
 
 
@@ -93,36 +96,32 @@ browse to...
 or if in docker...
 - 192.168.99.100:3000/questions
 
-docker note:
-- (get docker container ip using.... `docker-machine ip`)
-
 
 
 
 
 
 ## Notes:
-To allow the client to make an ajax call to the server on a separate port,
-- you may need to enable Allow-Control-Allow-Origin: * 
+To allow the client to make an ajax call to the server on a separate port on your devbox,
+- you may need to enable... Allow-Control-Allow-Origin: * 
 
 I use this Chrome extension for development...
-
-https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en
+- https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en
 
 
 ## Source Files Explanation:
 
-the json on the server, exposed as a route
+the json on the server, exposed as a route...
 
 > /src/server/db/formdata.json
 
 
-the react component on the client that retrieves the json from the server
+the react component on the client that retrieves the json from the server...
 
 > /src/client/index.jsx
 
 
-the lib module on the client that converts the form control information in the json file into jsx, and returns it back to the react component to render.
+the lib module on the client that converts the form control information in the json file into jsx, and returns it back to the react component to render...
 
 > /src/client/lib/dynamicControls
 
