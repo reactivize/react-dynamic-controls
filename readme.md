@@ -85,16 +85,20 @@ In docker terminal, cd into the root directory of the project
 eg...
  ` cd /c/Users/Public/mydocker/dynamicControlsClient `
 
-then run...
+
 ```bash
+#then run...
 docker run -it -v "$PWD":/dynamicControlsServer -p 3000:3000 -p 5858:5858 node:6.2.1 /bin/bash
+#now you're at the command prompt of the docker container
+
+#then...
+cd dynamicControlsServer
+
+
+#from within the container prompt, run the app, and listen for changes....
+npm run debug:server
+
 ```
-
-
-run app, and listen for changes....
-
-` npm run debug:server `
-
 
 
 browse to...
