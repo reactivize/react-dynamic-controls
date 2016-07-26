@@ -18,40 +18,48 @@ if you wish to run client code in docker container...
 - cd into root folder of project
 - then run...
 
-` docker run -it -v "$PWD":/react-dynamic-controls -p 8888:8888 node:6.2.1 /bin/bash `
+```bash
+docker run -it -v "$PWD":/react-dynamic-controls -p 8888:8888 node:6.2.1 /bin/bash
 
 
 
-now that you're in the shell of the container, cd into the root of the project
-
-` cd react-dynamic-controls `
-
+# now that you're in the shell of the container, cd into the root of the project
+cd react-dynamic-controls
 
 
-install packages...
 
-` npm i `
-
-
-production build...
-- run this first to create the bundle.js
-- give it one minute
-- will create a /public/ folder with a bundle.js and copied in index.html
-
-` npm run build `
+# install packages...
+npm i
 
 
-open up an other docker terminal
-- run webpack-dev-server from this new terminal
-- give it 30 seconds
 
-` npm run dev `
+# production build...
+# - in the docker terminal
+# - run this first to create the bundle.js
+# - give it one minute
+# - will create a /public/ folder with a bundle.js and copied in index.html
+# - and you will get your terminal prompt back
+npm run build
+
+
+
+
+
+# open up an other docker terminal
+# - run webpack-dev-server from this new terminal
+# - give it 30 seconds
+npm run dev
+
+```
+
 
   open the web browser to...
+  - 192.168.99.100:8888
+
+  or if not using docker...
   - http://localhost:8888
   
-  or if in docker...
-  - 192.168.99.100:8888
+
 
 docker note:
 - (get your docker container ip using.... `docker-machine ip`)
