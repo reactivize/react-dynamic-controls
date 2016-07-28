@@ -1,24 +1,21 @@
 
 #Client-side Setup
 
-download project to your devbox
-
-` git clone git@github.com:reactivize/react-dynamic-controls.git `
-
-
-
-change into the root folder of the project
-
-` cd react-dynamic-controls `
-
-
-
-if you wish to run client code in docker container...
-- open docker terminal
-- cd into root folder of project
-- then run...
-
 ```bash
+# download project to your devbox
+git clone git@github.com:reactivize/react-dynamic-controls.git
+
+
+
+# change into the root folder of the project
+cd react-dynamic-controls
+
+
+
+# if you wish to run client code in docker container...
+# - open docker terminal
+# - cd into root folder of project
+# - then run...
 docker run -it -v "$PWD":/react-dynamic-controls -p 8888:8888 node:6.2.1 /bin/bash
 
 
